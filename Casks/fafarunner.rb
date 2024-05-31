@@ -17,8 +17,13 @@ cask "fafarunner" do
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+)(\+\d+)?/i)
-    strategy :github_latest
+    strategy :git do |tags|
+      tags.map { |tag|
+        match = tag&.match(/^v?(\d+(?:\.\d+)+(\+\d+)?)$/i)
+        next if match.blank?
+        match[1]
+      }.compact
+    end
   end
 
   # https://docs.brew.sh/Cask-Cookbook#stanza-depends_on
