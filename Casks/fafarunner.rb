@@ -11,18 +11,19 @@ cask "fafarunner" do
   url "https://github.com/fafarunner/fafarunner/releases/download/v#{version}/FaFa.Runner.dmg",
       verified: "github.com/fafarunner/fafarunner/"
   name "FaFa Runner"
-  desc "A game developed using flame & bonfire."
+  desc "Game developed using flame & bonfire"
   homepage "https://chenyifaer.com/fafarunner"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     url :url
     strategy :git do |tags|
-      tags.map { |tag|
+      tags.filter_map do |tag|
         match = tag&.match(/^v?(\d+(?:\.\d+)+(\+\d+)?)$/i)
         next if match.blank?
+
         match[1]
-      }.compact
+      end
     end
   end
 
