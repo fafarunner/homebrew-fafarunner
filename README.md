@@ -1,52 +1,45 @@
 # homebrew-fafarunner
 
-> FaFa Runner for Homebrew.
-
-[![brew test-bot](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/tests.yml)
+[![Test](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/test.yml)
+[![Excavator](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/excavator.yml/badge.svg)](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/excavator.yml)
+[![Add version](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/version.yml/badge.svg)](https://github.com/fafarunner/homebrew-fafarunner/actions/workflows/version.yml)
 
 ## Install
 
-```shell
-brew install fafarunner/fafarunner/fafarunner
-```
+`brew install fafarunner/fafarunner/fafarunner`
 
-Or
-
-```shell
-brew tap fafarunner/fafarunner
-
-brew install fafarunner
-```
+Or `brew tap fafarunner/fafarunner` and then `brew install fafarunner`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-# Brewfile
 tap "fafarunner/fafarunner"
 brew "fafarunner"
 ```
 
+## Install a specific version
+
+If you want to install a specific release, you can include the version in the command. You can also view the list of releases [here](https://github.com/fafarunner/fafarunner/releases).
+
+```shell
+brew install fafarunner/fafarunner/fafarunner@1-0-0-plus-319
+```
+
+Or
+
+```bash
+brew tap fafarunner/fafarunner
+
+brew install fafarunner@1-0-0-plus-319
+```
+
 ## Debug
 
-[Adding Software to Homebrew](https://docs.brew.sh/Adding-Software-to-Homebrew)
+`brew audit --strict --fix --cask fafarunner`
 
-```shell
-brew audit --strict --fix --cask fafarunner
-```
+`brew style fafarunner/fafarunner`
 
-[Brew Livecheck](https://docs.brew.sh/Brew-Livecheck)
-
-```shell
-brew livecheck --debug fafarunner
-```
-
-## Release
-
-[How to Open a Homebrew Pull Request](https://docs.brew.sh/How-To-Open-a-Homebrew-Pull-Request)
-
-```shell
-brew bump --open-pr fafarunner
-```
+`brew livecheck --debug fafarunner`
 
 ## Documentation
 

@@ -1,4 +1,4 @@
-cask "fafarunner" do
+cask "fafarunner@1-0-0-plus-319" do
   version "1.0.0+319"
   sha256 "69a24fe6c5fa24a2b0ae0a3cc2f8df968f70edb1dd6902e98c891a7fd7315041"
 
