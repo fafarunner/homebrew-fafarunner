@@ -6,7 +6,7 @@ cask "fafarunner" do
       verified: "github.com/fafarunner/fafarunner/"
   name "FaFa Runner"
   desc "Game developed using flame & bonfire"
-  homepage "https://chenyifaer.com/fafarunner"
+  homepage "https://fafarunner.com/"
 
   livecheck do
     url :url
