@@ -1,6 +1,6 @@
 cask "fafarunner" do
-  version "1.0.0+333"
-  sha256 "f404bab28280e2916ecb2bfb796315b0eba1b1ce8b69c62a3a5fac56675c4870"
+  version "1.0.0+335"
+  sha256 "e8f4055b285c0355c0524587696e296929f46b65e030f20f862e6c8e1416bf6f"
 
   url "https://github.com/fafarunner/fafarunner/releases/download/v#{version}/FaFaRunner_#{version}_macos_universal.dmg",
       verified: "github.com/fafarunner/fafarunner/"
