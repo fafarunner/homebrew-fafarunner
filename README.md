@@ -17,22 +17,6 @@ tap "fafarunner/fafarunner"
 brew "fafarunner"
 ```
 
-## Install a specific version
-
-If you want to install a specific release, you can include the version in the command. You can also view the list of releases [here](https://github.com/fafarunner/fafarunner/releases).
-
-```shell
-brew install fafarunner/fafarunner/fafarunner@1-0-0-plus-320
-```
-
-Or
-
-```bash
-brew tap fafarunner/fafarunner
-
-brew install fafarunner@1-0-0-plus-320
-```
-
 ## Debug
 
 `brew audit --strict --fix --cask fafarunner`
